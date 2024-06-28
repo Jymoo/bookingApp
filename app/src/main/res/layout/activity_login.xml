@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOKING APP"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:padding="15dp"
+        android:background="@drawable/signin"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="4pt"
+        android:hint="email@gmail.com..."
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@color/colorSecondaryText" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="4pt"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@color/colorSecondaryText" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="4pt"
+        android:textColor="@android:color/background_dark"
+        android:backgroundTint="@color/statechange"
+        android:elevation="100dp"
+        app:cornerRadius="20dp"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/log_in" />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginBottom="20pt"
+        android:textColor="@android:color/background_dark"
+        android:backgroundTint="@color/statechange"
+        app:cornerRadius="20dp"
+        android:elevation="100dp"
+        android:text="@string/don_t_have_account_sign_up"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/termsNcond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4pt"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="@string/be_signing_in_you_agree_to_the_terms_and_conditions_of_using_this_service"/>
+    </LinearLayout>
+
+</LinearLayout>

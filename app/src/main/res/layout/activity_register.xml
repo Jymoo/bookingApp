@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    android:gravity="center"
+    tools:context=".Register">
+
+
+
+    <ImageView
+        android:layout_width="388dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:src="@drawable/register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-up"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="4pt"-->
+<!--        android:layout_marginLeft="4pt"-->
+<!--        android:layout_marginTop="10pt"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/colorSecondaryText"-->
+<!--        android:backgroundTint="@android:color/holo_blue_dark"-->
+<!--        android:hint="Username" />-->
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@color/colorSecondaryText"
+        android:hint="Email adress"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/PhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        android:hint="Phone No"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorSecondaryText"
+        android:backgroundTint="@android:color/white"
+        android:inputType="datetime"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="4pt"-->
+<!--        android:layout_marginLeft="4pt"-->
+<!--        android:layout_marginTop="10pt"-->
+<!--        android:hint="Registration date"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/colorSecondaryText"-->
+<!--        android:backgroundTint="@android:color/holo_blue_dark"-->
+<!--        android:inputType="datetime"/>-->
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginRight="4pt"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorSecondaryText"
+        android:backgroundTint="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginRight="4pt"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorSecondaryText"
+        android:backgroundTint="@android:color/white"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4pt"
+        android:layout_marginLeft="4pt"
+        android:layout_marginTop="10pt"
+        app:cornerRadius="20dp"
+        android:textColor="@android:color/background_dark"
+        android:backgroundTint="@color/statechange"
+        android:text="SIGN UP"
+        />
+
+
+</LinearLayout>

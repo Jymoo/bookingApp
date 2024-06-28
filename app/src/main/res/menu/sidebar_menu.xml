@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_attachment"
+            android:icon="@drawable/ic_baseline_attachment_24"
+            android:title="@string/my_orders" />
+        <item
+            android:id="@+id/navigation_item_images"
+            android:icon="@drawable/ic_baseline_image_24"
+            android:title="@string/daily_tips" />
+        <item
+            android:id="@+id/navigation_item_location"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="@string/location" />
+    </group>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="@string/edit_profile" />
+            <item
+                android:id="@+id/signoutnav"
+                android:icon="@drawable/ic_baseline_account_circle_24"
+                android:title="@string/signout" />
+        </menu>
+    </item>
+
+</menu>

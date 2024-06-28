@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">bookApp</string>
+
+    <string name="title_activity_home">home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="title_activity_bottombar">bottombar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_upload_section">UploadSection</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="log_in">LOG IN</string>
+    <string name="title_activity_main_homes">MainActivityHomes</string>
+    <string name="favorites">favorites</string>
+    <string name="music">music</string>
+    <string name="places">places</string>
+    <string name="news">places</string>
+    <string name="descriptions_kiambu_rd_runda_westlands_nairobi_an_exclusive_highly_anticipated_long_awaited_high_end_gated_community_of_26_stunning_read_more">Descriptions... Kiambu Rd., Runda, Westlands, Nairobi An exclusive, highly anticipated, long-awaited, high-end, gated community of 26 stunning Read more..</string>
+    <string name="home">home</string>
+    <string name="myacc">myacc</string>
+    <string name="search...">Search...</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="homes_and_rents">Homes And Rents</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account?SIGN UP</string>
+    <string name="be_signing_in_you_agree_to_the_terms_and_conditions_of_using_this_service">By signing in, you agree to the terms and conditions of using this service</string>
+    <string name="homebase_app">HomeBase App</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="lands">Lands</string>
+    <string name="home1">Home</string>
+    <string name="movers">Movers</string>
+    <string name="updates">Updates</string>
+    <string name="title_activity_side_nav">Side_Nav</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="attachments">Attachments</string>
+    <string name="images">Images</string>
+    <string name="location">Location</string>
+    <string name="others">Others</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="signout">Signout</string>
+
+    <string name="otp_title">Please enter the 6 digit verification code</string>
+    <string name="otp_button_text">VERIFY</string>
+    <string name="resend_msg">Didn’t receive the OTP?</string>
+    <string name="resend_again_msg">Resend again</string>
+    <string name="sent_to_91_xxxx_xxx">sent to +254 XXXX XXX</string>
+    <string name="in_progress">In Progress...</string>
+    <string name="status">In progress..</string>
+    <string name="statustxt">STATUS</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+    <string name="sign_out">Sign out</string>
+    <string name="my_orders">My Orders</string>
+    <string name="daily_tips">Daily Tips</string>
+    <string name="recent_bookings">Recent bookings</string>
+
+    <string name="about">Welcome Booking App, your ultimate solution for effortless meeting room reservations. Our mission is to simplify the process of booking meeting spaces, ensuring you have more time to focus on what truly matters—your meetings and events. With Booking App, you can: Easily Check Availability: View real-time availability of meeting rooms. Book Instantly: Reserve your space with just a few clicks. Manage Reservations: Keep track of your bookings and make adjustments as needed. Customize Your Experience: Specify room capacity, equipment needs, and other preferences to tailor your meeting environment. Our user-friendly interface and seamless integration with popular calendar applications (such as Google Calendar and Microsoft Outlook) make scheduling and managing meetings a breeze. Whether you\'re planning a business meeting, a student study group, or a family event, Booking App is here to help you find the perfect space.</string>
+    <string name="contact">We value your feedback and are here to assist you with any questions or concerns. Please feel free to reach out to us: Email: support@bookingapp.com Phone: +254 742 5430 69 Address: 00500 Nairobi Kenya For general inquiries or support, you can also fill out the contact form on our website, and one of our team members will get back to you promptly.</string>
+    <string name="location_texts">Book your stay with us and immerse yourself in the heart of Kenya. Explore our luxurious accommodations and facilities: Comfortable rooms with stunning views Guided tours of the local area On-site restaurant featuring local cuisine Visit us at:  Moi Avenue, Nairobi. P.O. Box 30213 - 00100 Nairobi, Kenya. For booking inquiries and reservations, contact us: Email: info@ktdateas.com Call: (+254) 020 322 7000-2 / (+254) 020 222 1441-4 We look forward to welcoming you to our tranquil retreat!</string>
+    <string name="sustainability_text">At Booking App, we are committed to promoting sustainable practices and minimizing our environmental impact. Our application is designed to facilitate efficient use of meeting spaces, reducing the need for physical resources and travel. By optimizing room usage and minimizing overlapping bookings, we contribute to the reduction of energy consumption and resource waste. Our sustainability initiatives include: Digital Integration: Reducing the need for printed materials by providing a fully digital platform. Efficient Resource Use: Promoting the optimal use of meeting spaces to avoid unnecessary heating, lighting, and cooling. Green Partnerships: Collaborating with eco-friendly venues and encouraging our partners to adopt sustainable practices. We believe that every step towards sustainability counts. By choosing [App Name], you are not only simplifying your meeting planning process but also contributing to a more sustainable future.</string>
+    <string name="dailytips">Daily tips...Add Description here... explain whats new: Discover a hidden gem nestled in the heart of a tranquil valley, where a charming boutique hotel awaits. With only a handful of rooms, each exquisitely designed to blend modern comfort with local charm, this retreat offers a secluded haven for those seeking a peaceful escape. Surrounded by lush greenery and breathtaking mountain views, guests can unwind in elegant rooms adorned with artisanal details and indulge in farm-to-table dining at the intimate restaurant. Perfectly balancing serenity and sophistication, this hidden gem promises an unforgettable stay for discerning travelers seeking a unique experience off the beaten path.</string>
+    <string name="descriptiontitem">Enter discription here.. Discover Serene Haven Lodge, a hidden gem nestled in tranquil forests overlooking a serene lake. Our Deluxe Lakeside Cabins offer modern comforts with private balconies and stunning views. Enjoy locally sourced cuisine at our lakeside restaurant, unwind in our rustic lodge, or explore nearby hiking trails. For reservations, visit www.serenehavenlodge.com or call +1 (555) 123-4567. Escape to Serene Haven Lodge where tranquility meets luxury.</string>
+    <string name="booking_app">BOOKING APP</string>
+    <string name="about_the_app">About the app</string>
+    <string name="get_50_off_on_your_next_purchase">Get 50% off on your next purchase</string>
+    <string name="special_offer">Special Offer</string>
+    <string name="menu">Menu</string>
+
+
+    <string-array name="locations_array">
+        <item>Select your Location</item>
+        <item>Nakuru</item>
+        <item>Narok</item>
+        <item>Kericho</item>
+        <item>Bomet</item>
+        <item>Nyamira</item>
+        <item>Kisii</item>
+        <item>Kakamega</item>
+        <item>Bungoma</item>
+        <item>Vihiga</item>
+        <item>Meru</item>
+        <item>Nandi</item>
+        <item>Elgeyo</item>
+        <item>Marakwet</item>
+        <item>Trans-Nzoia</item>
+        <item>Kiambu</item>
+        <item>Muranga</item>
+        <item>Nyeri</item>
+        <item>Bungoma</item>
+        <item>Kirinyaga</item>
+        <item>Embu</item>
+        <item>Tharaka-Nithi</item>
+        <item>Nairobi</item>
+        <item>Mombasa</item>
+        <item>Kisumu</item>
+        <item>Nakuru</item>
+        <item>Eldoret</item>
+        <item>Thika</item>
+        <item>Kitale</item>
+        <item>Malindi</item>
+        <item>Garissa</item>
+        <item>Kakamega</item>
+        <item>Kericho</item>
+        <item>Machakos</item>
+        <item>Naivasha</item>
+        <item>Nanyuki</item>
+        <item>Embu</item>
+        <item>Isiolo</item>
+        <item>Mandera</item>
+        <item>Lamu</item>
+        <item>Kilifi</item>
+        <item>Voi</item>
+        <item>Lodwar</item>
+        <item>Wajir</item>
+        <item>Busia</item>
+        <item>Siaya</item>
+        <item>Homa Bay</item>
+        <item>Migori</item>
+        <item>Bomet</item>
+        <item>Narok</item>
+        <item>Nyandarua</item>
+        <item>Kajiado</item>
+        <item>Samburu</item>
+        <item>Laikipia</item>
+        <item>West Pokot</item>
+        <item>Baringo</item>
+        <item>Turkana</item>
+        <item>Uasin Gishu</item>
+        <item>Kisii</item>
+        <item>Nyamira</item>
+        <item>Tana River</item>
+        <item>Taita-Taveta</item>
+        <item>Marsabit</item>
+        <item>Makueni</item>
+        <item>Kwale</item>
+        <item>Mandera</item>
+        <item>Nyamira</item>
+        <item>Kerugoya</item>
+        <item>Chuka</item>
+        <item>Maralal</item>
+        <item>Kapenguria</item>
+        <item>Kimilili</item>
+        <item>Kapsabet</item>
+        <item>Nyahururu</item>
+        <item>Naro Moru</item>
+        <item>Gilgil</item>
+        <item>Ruiru</item>
+        <item>Limuru</item>
+        <item>Ngong</item>
+        <item>Athi River</item>
+        <item>Ongata Rongai</item>
+        <item>Rongai</item>
+        <item>Kitui</item>
+        <item>Mwingi</item>
+        <item>Wote</item>
+        <item>Maragua</item>
+        <item>Kangundo</item>
+        <item>Kajiado</item>
+        <item>Mutomo</item>
+        <item>Kwale</item>
+        <item>Ukunda</item>
+
+
+    </string-array>
+
+</resources>

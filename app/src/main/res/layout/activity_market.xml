@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Market">
+
+    <!--    Search bar-->
+    <RelativeLayout
+        android:id="@+id/item_search_holder"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_card_parent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@color/Gray"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/item_search_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/item_clear_click_parent"
+                    android:layout_toEndOf="@+id/item_search_icon"
+                    android:autofillHints=""
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search..."
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#55CDDC"
+                    android:textColorHint="#55CDDC"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/item_search_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/ic_baseline_search_24"
+                    app:tint="#55CDDC"
+                    tools:ignore="ImageContrastCheck" />
+
+                <RelativeLayout
+                    android:id="@+id/item_clear_click_parent"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/item_mic_click_parent"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/item_clear_icon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_baseline_clear_24"
+                        app:tint="#ffffff" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_mic_click_parent"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/item_menu_click_parent"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck">
+
+                    <ImageView
+                        android:id="@+id/item_mic_icon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_baseline_mic_24"
+                        app:tint="#55CDDC"
+                        tools:ignore="ImageContrastCheck" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_menu_click_parent"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+                    <ImageView
+                        android:id="@+id/item_menu_icon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+                        app:tint="#55CDDC"
+                        tools:ignore="ImageContrastCheck" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="55dp">
+
+        <!--        refresh_view_content-->
+
+            <!--Recycle view content to appear hear-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layoutManager="LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:stackFromEnd="false" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:gravity="center"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:fabAlignmentMode="center"
+            app:hideOnScroll="true">
+
+            <LinearLayout
+                android:id="@+id/bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/homebtn_market"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    tools:ignore="OnClick">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="TODO"
+                        android:padding="0dp"
+                        app:srcCompat="@drawable/ic_baseline_home_24"
+                        app:tint="#55CDDC" />
+
+                    <TextView
+                        android:id="@+id/tv_users"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Home"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Market_market"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    tools:ignore="OnClick">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="0dp"
+                        app:srcCompat="@drawable/baseline_find_replace_24"
+                        app:tint="#55CDDC"/>
+
+                    <TextView
+                        android:id="@+id/tv_products"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Book"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/Tips_Market"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    tools:ignore="OnClick">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="0dp"
+                        app:srcCompat="@drawable/ic_baseline_new_releases_24"
+                        app:tint="#55CDDC" />
+
+                    <TextView
+                        android:id="@+id/tv_transactions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="New"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Myordermkt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    tools:ignore="OnClick">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="TODO"
+                        android:padding="0dp"
+                        app:srcCompat="@drawable/ic_baseline_update_24"
+                        app:tint="#55CDDC" />
+
+                    <TextView
+                        android:id="@+id/tv_profile_market"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Booking History"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:onClick="onClick"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:tint="@android:color/white"
+            app:backgroundTint="#55CDDC"
+            app:layout_anchor="@id/bar"
+            app:rippleColor="@color/statechange"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar"-->
+    <!--        style="?android:attr/progressBarStyle"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
